@@ -55,6 +55,7 @@ the xkeyval package for argument decoding.
 %doc %{_texmfdistdir}/doc/generic/pst-poly/pst-poly-doc.tex
 #- source
 %doc %{_texmfdistdir}/source/generic/pst-poly/Makefile
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +66,5 @@ the xkeyval package for argument decoding.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
