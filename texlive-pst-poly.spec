@@ -6,7 +6,7 @@
 # catalog-version 1.61
 Name:		texlive-pst-poly
 Version:	1.61
-Release:	9
+Release:	10
 Summary:	Polygons with PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-poly
