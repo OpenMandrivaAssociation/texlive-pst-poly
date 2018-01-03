@@ -1,19 +1,12 @@
-# revision 16460
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-poly
-# catalog-date 2009-12-20 19:36:06 +0100
-# catalog-license lppl
-# catalog-version 1.61
 Name:		texlive-pst-poly
-Version:	1.61
-Release:	10
+Version:	1.63
+Release:	1
 Summary:	Polygons with PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-poly
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-poly.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-poly.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-poly.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -37,36 +30,16 @@ the xkeyval package for argument decoding.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/pst-poly/pst-poly.tex
-%{_texmfdistdir}/tex/latex/pst-poly/pst-poly.sty
-%doc %{_texmfdistdir}/doc/generic/pst-poly/Changes
-%doc %{_texmfdistdir}/doc/generic/pst-poly/README
-%doc %{_texmfdistdir}/doc/generic/pst-poly/pst-poly-doc.bib
-%doc %{_texmfdistdir}/doc/generic/pst-poly/pst-poly-doc.pdf
-%doc %{_texmfdistdir}/doc/generic/pst-poly/pst-poly-doc.tex
-#- source
-%doc %{_texmfdistdir}/source/generic/pst-poly/Makefile
+%{_texmfdistdir}/tex/generic/pst-poly
+%{_texmfdistdir}/tex/latex/pst-poly
+%doc %{_texmfdistdir}/doc/generic/pst-poly
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.61-2
-+ Revision: 755401
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.61-1
-+ Revision: 719382
-- texlive-pst-poly
-- texlive-pst-poly
-- texlive-pst-poly
-- texlive-pst-poly
-
+cp -fpar tex doc %{buildroot}%{_texmfdistdir}
