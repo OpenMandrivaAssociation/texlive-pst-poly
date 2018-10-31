@@ -1,6 +1,6 @@
 Name:		texlive-pst-poly
 Version:	1.63
-Release:	1
+Release:	2
 Summary:	Polygons with PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-poly
