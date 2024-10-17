@@ -3,7 +3,7 @@ Version:	35062
 Release:	2
 Summary:	Polygons with PSTricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-poly
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-poly
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-poly.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-poly.doc.r%{version}.tar.xz
